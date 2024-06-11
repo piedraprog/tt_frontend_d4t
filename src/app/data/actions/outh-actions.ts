@@ -11,7 +11,7 @@ import {
 const config = {
   maxAge: 60 * 60 * 24 * 7,
   path: "/",
-  domain: "www.bocito.dev" ?? "localhost",
+  domain: "www.botcito.dev" ?? "localhost",
   httpOnly: true,
   secure: process.env.NODE_ENV === "production",
 };
