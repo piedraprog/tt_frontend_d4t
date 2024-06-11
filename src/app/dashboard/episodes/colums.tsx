@@ -30,7 +30,7 @@ export const columns: ColumnDef<Episodes>[] = [
   {
     accessorKey: "created",
     header: "Created",
-    cell: ({ row }) => {
+    cell: ({ row }: any) => {
       const created = moment(row).format('l')
       return created
     }
