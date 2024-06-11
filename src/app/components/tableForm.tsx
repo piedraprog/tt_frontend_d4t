@@ -11,7 +11,7 @@ import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';
 import { Episodes } from '../utils/interfaces/episodes.interface';
 import { Badge } from "@/components/ui/badge"
-import CharacterHoverCard from './hoverCharCard';
+// import CharacterHoverCard from './hoverCharCard';
 
 
 interface TableProps<T> {
