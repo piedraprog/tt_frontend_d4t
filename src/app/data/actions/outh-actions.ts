@@ -9,9 +9,9 @@ import {
 } from "@/app/data/services/auth-service";
 
 const config = {
-  maxAge: 60 * 60 * 24 * 7, // 1 week
+  maxAge: 60 * 60 * 24 * 7,
   path: "/",
-  domain: process.env.HOST ?? "localhost",
+  domain: "www.botcito.dev" ?? "localhost",
   httpOnly: true,
   secure: process.env.NODE_ENV === "production",
 };
