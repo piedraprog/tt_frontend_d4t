@@ -11,7 +11,7 @@ import {
 const config = {
   maxAge: 60 * 60 * 24 * 7, // 1 week
   path: "/",
-  domain: process.env.HOST ?? "localhost",
+  domain: "www.bocito.dev" ?? "localhost",
   httpOnly: true,
   secure: process.env.NODE_ENV === "production",
 };
@@ -129,7 +129,6 @@ export async function loginUserAction(prevState: any, formData: FormData) {
 export async function logoutAction() {
 
   console.log("borrando cookies")
-  cookies().delete("jwt") 
-  // ("jwt", "", { ...config, maxAge: 0 });
+  cookies().set("jwt", "", { ...config, maxAge: 0 });
   redirect("/");
 }
