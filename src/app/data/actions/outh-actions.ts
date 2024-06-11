@@ -11,7 +11,7 @@ import {
 const config = {
   maxAge: 60 * 60 * 24 * 7, // 1 week
   path: "/",
-  domain: process.env.HOST ?? "localhost",
+  domain: "develop.botcito.dev" ?? "localhost",
   httpOnly: true,
   secure: process.env.NODE_ENV === "production",
 };
@@ -64,7 +64,8 @@ export async function registerUserAction(prevState: any, formData: FormData) {
     };
   }
 
-  cookies().set("jwt", responseData.jwt, config);
+  cookies().set() 
+  // ("jwt", responseData.jwt, config);
   redirect("/dashboard");
 }
 
