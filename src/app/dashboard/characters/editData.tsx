@@ -24,6 +24,7 @@ import { toast } from "@/components/ui/use-toast"
 import { ToastAction } from "@radix-ui/react-toast"
 import { Episodes } from "@/app/utils/interfaces/episodes.interface"
 import moment from "moment"
+import { Character } from "@/app/utils/interfaces/characters.interface"
 
 const FormSchema = z.object({
   name: z.string().min(2, {
@@ -42,7 +43,7 @@ const FormSchema = z.object({
 
 
 
-export function EditDialog({epData}: {epData: Episodes}) {
+export function EditDialog({ charData }: { charData: Character}) {
 
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),

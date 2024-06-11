@@ -12,9 +12,10 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { MoreHorizontal } from "lucide-react"
 import { EditDialog } from "./editData";
+import { Character } from "@/app/utils/interfaces/characters.interface";
 
 
-export const columns: ColumnDef<Episodes>[] = [
+export const columns: ColumnDef<Character>[] = [
   {
     accessorKey: "id",
     header: "ID",
@@ -62,7 +63,7 @@ export const columns: ColumnDef<Episodes>[] = [
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
             <DropdownMenuLabel>Actions</DropdownMenuLabel>
-            <EditDialog epData={character}></EditDialog>
+            <EditDialog charData={character}></EditDialog>
           </DropdownMenuContent>
         </DropdownMenu>
       )

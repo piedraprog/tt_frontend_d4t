@@ -1,6 +1,5 @@
-import { Episodes } from '@/app/utils/interfaces/episodes.interface'
 import { columns } from './colums'
-import { DataTable } from "./character-table"
+import { CharacterTable } from "./character-table"
 import { Character } from '@/app/utils/interfaces/characters.interface'
 
 export default async function DemoPage() {
@@ -673,7 +672,7 @@ export default async function DemoPage() {
   return (
     <div className="container w-[90%] m-6 flex min-h-screen flex-col">
       <h1 className="text-3xl font-bold mb-6">Characters</h1>
-      <DataTable columns={columns} data={data} />
+      <CharacterTable columns={columns} data={data} />
     </div>
   )
 }
