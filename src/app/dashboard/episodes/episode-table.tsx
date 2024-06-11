@@ -28,6 +28,8 @@ import {
 	SelectTrigger,
 	SelectValue,
 } from "@/components/ui/select"
+import { Button } from "@/components/ui/button"
+import { CreateEpisodeDialog } from "./createEpisode"
 
 
 
@@ -89,7 +91,7 @@ export function DataTable<TData, TValue>({
 					</SelectContent>
 				</Select>
 
-
+				<CreateEpisodeDialog/>
 			</div>
 
 			{/* Table */}
