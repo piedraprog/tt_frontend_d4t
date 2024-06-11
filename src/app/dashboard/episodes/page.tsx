@@ -719,6 +719,7 @@ export default async function DemoPage() {
 
   return (
     <div className="container w-[90%] m-6 flex min-h-screen flex-col">
+      <h1 className="text-3xl font-bold mb-6">Episodes</h1>
       <DataTable columns={columns} data={data} />
     </div>
   )
